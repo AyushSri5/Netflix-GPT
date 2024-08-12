@@ -43,6 +43,7 @@
         - Title & Description
         - Movie Suggestions
             - MovieLists * N
+                - MovieCards
 - Netflix GPT
     - Search Bar
     - Movie Suggestions
