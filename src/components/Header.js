@@ -86,7 +86,7 @@ alt='logo' />
           >
             {showGptSearch ? "Homepage" : "GPT Search"}
           </button>
-       <img className='w-12 h-12' alt='user-icon' src={user?.photoURL} />
+       <img className='hidden md:block w-12 h-12' alt='user-icon' src={user?.photoURL} />
       <button className='font-bold text-white' onClick={handleSignOut}>Sign Out</button>
 
     </div>
