@@ -35,9 +35,6 @@ const GptSearchBar = () => {
     const gptResults = await openai.generateContent(gptQuery);
     const response = await gptResults.response;
     const text = response.text();
-    console.log(response);
-    
-    console.log(text);
 
     const gptMovies = text.split(",");
 
@@ -45,8 +42,6 @@ const GptSearchBar = () => {
     // [Promise, Promise, Promise, Promise, Promise]
 
     const tmdbResults = await Promise.all(promiseArray);
-
-    console.log(gptMovies+"---->"+tmdbResults);
     
     dispatch(
       addGptMovieResult({ movieNames: gptMovies, movieResults: tmdbResults })

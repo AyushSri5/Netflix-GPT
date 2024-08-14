@@ -78,10 +78,6 @@ const Login = () => {
           });
         }
         
-        // console.log("Email", email);
-        
-        
-        
     }
 
 
